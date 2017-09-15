@@ -1,0 +1,228 @@
+/*CSS FOR ALL PAGES*/
+html, body {
+    height: 100%;
+
+}
+
+body {
+    background: url("../images/hypnotize.png") repeat;
+    display: flex;
+    flex-direction:column;
+
+}
+
+h1{ 
+    padding: 10px;
+    font-weight: bold;
+ }
+
+a:hover {
+    color:#4aaaa5;
+} 
+
+a:focus {
+    color:#e89f0c;
+}
+
+li {
+    display:inline-block;
+    color: grey;
+    margin-bottom:30px;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+h2 {
+    color:#4aaaa5;
+    font-size: 24px;
+    font-weight:bold;
+    margin: 0 auto;
+    margin-left:15px;
+}
+
+
+header { 
+  list-style:none;
+  margin-bottom: 20px;
+  background-color:white;
+  height: auto;
+  border-bottom:solid 1px #dddddd;
+}
+
+/*Clearfix to Cancel out Float and Push Footer to Bottom*/
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+
+}
+
+footer {
+    padding: 30px;
+    color: #777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: #666666;
+    clear: both;
+    margin-top:10px;
+    width: 100%;
+    border-top: solid 4px #4aaaa5;
+}
+
+#menu {
+    float:right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#contact-me img {
+    width:42px;
+    height:42px;
+    border:0;
+
+}
+
+
+#logo-text {
+    margin-top:20px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 32px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    height: 70px;
+    float: left;
+    margin-left:10px;
+}
+
+
+.LargerBoxContainer {
+	width:650px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    float: left;
+    margin-bottom:20px;
+}
+
+
+.ContactContainer {
+    width:270px;
+    background-color: #ffffff;
+    margin-left: 25px;
+    float: left;   
+
+}
+
+.main-content {
+    max-width: 960px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.content-wrapper {
+    margin: 30px;
+}
+
+.inside-content-wrapper {
+    margin: 20px;
+    padding-top: 20px; 
+    border-top: solid 2px #dddddd;
+    color:#777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#contact-me .inside-content-wrapper {
+    text-align: center;
+}
+.inside-content-wrapper p {
+    line-height: 2;
+}
+
+/*ABOUT PAGE STYLING*/
+
+/* About Page Image */
+
+.ProfileImage {
+    display: inline-block;
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+
+/*PORTFOLIO PAGE STYLING*/
+
+
+/*Centering All Images in Portfolio Container by adding Margin on Left*/
+#PortfolioImageContainer {
+    margin-left: 35px ;
+}
+
+/*Creating Maring on the Right of all the Portfolio Images in the left Column*/
+#PortfolioImageContainer .RecentWork:nth-child(odd){
+    margin-right:10px;
+}
+
+
+/*Creating Margin on the Left of All Portfolio Images in the Right Column*/
+#PortfolioImageContainer .RecentWork:nth-child(even){
+    margin-left:10px;
+}
+
+
+.RecentWork {
+    float:left;
+    margin-bottom:20px;
+    width:47%;
+    position:relative;
+}
+
+.PortfolioImage {
+    width: 100%;
+}
+
+/*Styling All <p> tags on Portfolio Images*/
+.RecentWork p {
+    background-color: #4aaaa5;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+
+/*CONTACT PAGE STYLING*/
+
+/*Styling First Name, Last Name and Message Areas on Form*/
+input[type=text], textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*Styling Submit button on form*/
+input[type=submit] {
+    background-color: #4aaaa5 ;
+    color: white;
+    font-size: 14px;
+    padding: 12px 20px;
+    border: none;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+
+}
