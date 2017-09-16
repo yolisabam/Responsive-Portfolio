@@ -112,7 +112,8 @@ footer {
     width:270px;
     background-color: #ffffff;
     margin-left: 25px;
-    float: left;   
+    float: left; 
+    clear:initial;  
 
 }
 
@@ -229,8 +230,10 @@ input[type=submit] {
 
 /*Media Queries*/
 
-/*These rules take effect when the browser's width 
-is either 980px or less*/
+/*////////////////////////////////////////////////
+  These rules take effect when the browser's width 
+    is either 980px or less
+    ///////////////////////////////////////////////*/
 
 @media screen and (max-width: 980px) {
 
@@ -243,102 +246,155 @@ h2 {
     border-bottom: solid 2px width: 80 % #dddddd;
 }
 
+footer {
+    text-align: center;
+}
+
 header { 
   list-style:none;
-  max-width: 80%
   margin-bottom: 20px;
   background-color:white;
   height: auto;
   border-bottom:solid 1px #dddddd;
 }
 
-body {
-    overflow:auto;
-} 
+    body {
+        overflow:auto;
+    } 
 
-form {
-    margin: 20px;
-}
-.RecentWork {
-    float:none;
-    margin-bottom:20px;
-    margin-right:20px;
-    width:100%;
-    position:relative;
-}
+    form {
+        margin: 20px;
+    }
 
-.RecentWork img {
-    margin-right:20px;
-}
+    .RecentWork {
+        float:none;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 100%;
+        position:relative;
+    }
+
+    .RecentWork img {
+        margin-right:20px;
+    }
 
 
-#PortfolioImageContainer .RecentWork:nth-child(odd){
-    margin-right:20px;
-    margin-left: 0px;
-}
+    #PortfolioImageContainer .RecentWork:nth-child(odd){
+        margin-right:20px;
+        margin-left: 0px;
+    }
 
 
 /*Creating Margin on the Left of All Portfolio Images in the Right Column*/
-#PortfolioImageContainer .RecentWork:nth-child(even){
-    margin-left:0px;
-    margin-right:20px;
-}
+    #PortfolioImageContainer .RecentWork:nth-child(even){
+        margin-left:0px;
+        margin-right:20px;
+    }
 
-.LargerBoxContainer {
-    width:300px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    float: left;
-    margin-bottom:20px;
-}
-
-
-.ContactContainer {
-    width:170px;
-    background-color: #ffffff;
-    margin-left: 10px;
-    float: left;   
-
-}
-
-.main-content {
-    max-width: 700px;
-    margin: 0 auto;
-    flex: 1 0 auto;
-
-}
-
-.header-content {
-    max-width: 500px;
-    height: 70px;
-
-}
+    .LargerBoxContainer {
+        width:300px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        float: left;
+        margin-bottom:20px;
+    }
 
 
-.content-wrapper {
-    margin: 0px;
+    .ContactContainer {
+        width:170px;
+        background-color: #ffffff;
+        margin-left: 10px;
+        float: left;
+        clear: initial;   
 
-}
+    }
 
-.inside-content-wrapper {
-    margin: 20px;
-    padding-top: 20px; 
-    color:#777777;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    border-top: width:80%;
-}
+    #PortfolioImageContainer {
+        margin:0;
+    }
 
-#contact-me img {
-    width:30px;
-    height:30px;
-    border:0;
+    .main-content {
+        max-width: 700px;
+        margin: 0 auto;
+        flex: 1 0 auto;
 
-}
+    }
+
+    .header-content {
+        max-width: 500px;
+        height: 70px;
+    }
+
+
+    .content-wrapper {
+        margin: 0px;
+
+    }
+
+    .inside-content-wrapper {
+        margin: 20px;
+        padding-top: 20px; 
+        color:#777777;
+        font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        border-top: width:80%;
+    }
+
+    #contact-me img {
+        width:30px;
+        height:30px;
+        border:0;
+
+    }
   
+}
+
+
+  /*////////////////////////////////////////////////
+  These rules take effect when the browser's width 
+    is either 768px or less
+    ///////////////////////////////////////////////*/
+
+@media screen and (max-width: 768px) {   
+
+
+    .LargeBoxContainer {
+       margin-bottom: 20px;
+       width: 760px;
+
+    } 
+
+    .main-content {
+        float: none;
+    }
+
+    .ContactContainer {
+        width:300px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-left: 0;
+        float: none;
+        clear:both;
+
+    }
+
+    .RecentWork {
+        float:left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 43%;
+        position:relative;
+    }
+
+    #PortfolioImageContainer .RecentWork:nth-child(even){
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    
+
+}
 
 
 
-  /*These rules take effect when the browser's width 
-    is either 768px or less*/
 
   
