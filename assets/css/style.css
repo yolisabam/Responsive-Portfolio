@@ -239,6 +239,7 @@ h2 {
     font-weight:bold;
     margin-top: 10px;
     margin-left:15px;
+    padding-top:10px;
     border-bottom: solid 2px width: 80 % #dddddd;
 }
 
@@ -261,20 +262,26 @@ form {
 .RecentWork {
     float:none;
     margin-bottom:20px;
-    width:70%;
+    margin-right:20px;
+    width:100%;
     position:relative;
 }
 
+.RecentWork img {
+    margin-right:20px;
+}
+
+
 #PortfolioImageContainer .RecentWork:nth-child(odd){
-    margin-right:0px;
-    margin-left: 45px;
+    margin-right:20px;
+    margin-left: 0px;
 }
 
 
 /*Creating Margin on the Left of All Portfolio Images in the Right Column*/
 #PortfolioImageContainer .RecentWork:nth-child(even){
-    margin-left:45px;
-    margin-right:px;
+    margin-left:0px;
+    margin-right:20px;
 }
 
 .LargerBoxContainer {
@@ -302,7 +309,7 @@ form {
 }
 
 .header-content {
-    max-width: 680px;
+    max-width: 500px;
     height: 70px;
 
 }
@@ -314,17 +321,20 @@ form {
 }
 
 .inside-content-wrapper {
-    margin: 0px;
+    margin: 20px;
     padding-top: 20px; 
     color:#777777;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     border-top: width:80%;
 }
 
-  
-#PortfolioImageContainer {
-    margin: 0;
+#contact-me img {
+    width:30px;
+    height:30px;
+    border:0;
+
 }
+  
 
 
 
